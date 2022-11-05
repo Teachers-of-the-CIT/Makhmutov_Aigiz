@@ -1,0 +1,44 @@
+﻿<Window x:Class="Makhmutov4438ParfumeriaApp.Windows.WindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Makhmutov4438ParfumeriaApp.Windows"
+        mc:Ignorable="d"
+        Icon="/Logo/logo.png"
+        Background="{StaticResource ColorPrimaryBackground}"
+        Title="Парфюмерия-Администратор" 
+        MinHeight="400"
+        MinWidth="400"
+        WindowStartupLocation="CenterScreen"
+        Height="600" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="475*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="{StaticResource ColorSecondaryBackground}" Grid.ColumnSpan="5"></Rectangle>
+        <Button
+                x:Name="BtnAuth"
+                Click="BtnAuth_Click"
+                Background="{StaticResource ColorAttention}"
+                Style="{StaticResource BtnStyle}"
+                >Выход</Button>
+        <TextBlock
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Style="{StaticResource TbStyle}"
+            x:Name="TbUsername"
+            ></TextBlock>
+    </Grid>
+</Window>
