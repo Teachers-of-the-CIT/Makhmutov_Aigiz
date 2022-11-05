@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище parfumerModelContainer" CdmEntityContainer="parfumerDbEntitiess">
+    <EntitySetMapping Name="Заказы">
+      <EntityTypeMapping TypeName="parfumerModel.Заказы">
+        <MappingFragment StoreEntitySet="Заказы">
+          <ScalarProperty Name="НомерЗаказа" ColumnName="НомерЗаказа" />
+          <ScalarProperty Name="ДатаЗаказа" ColumnName="ДатаЗаказа" />
+          <ScalarProperty Name="ДатаВыдачи" ColumnName="ДатаВыдачи" />
+          <ScalarProperty Name="IdПВЗ" ColumnName="IdПВЗ" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Код" ColumnName="Код" />
+          <ScalarProperty Name="IdПользователь" ColumnName="IdПользователь" />
+          <ScalarProperty Name="Статус" ColumnName="Статус" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ПВЗ">
+      <EntityTypeMapping TypeName="parfumerModel.ПВЗ">
+        <MappingFragment StoreEntitySet="ПВЗ">
+          <ScalarProperty Name="Id_ПВЗ" ColumnName="Id_ПВЗ" />
+          <ScalarProperty Name="Индекс" ColumnName="Индекс" />
+          <ScalarProperty Name="Город" ColumnName="Город" />
+          <ScalarProperty Name="Улица" ColumnName="Улица" />
+          <ScalarProperty Name="Дом" ColumnName="Дом" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Пользователи">
+      <EntityTypeMapping TypeName="parfumerModel.Пользователи">
+        <MappingFragment StoreEntitySet="Пользователи">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Роль" ColumnName="Роль" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Продукты">
+      <EntityTypeMapping TypeName="parfumerModel.Продукты">
+        <MappingFragment StoreEntitySet="Продукты">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Артикул" ColumnName="Артикул" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="ЕдиницаИзмерения" ColumnName="ЕдиницаИзмерения" />
+          <ScalarProperty Name="Стоимость" ColumnName="Стоимость" />
+          <ScalarProperty Name="МаксСкидка" ColumnName="МаксСкидка" />
+          <ScalarProperty Name="Производитель" ColumnName="Производитель" />
+          <ScalarProperty Name="Поставщик" ColumnName="Поставщик" />
+          <ScalarProperty Name="Категория" ColumnName="Категория" />
+          <ScalarProperty Name="ДейстСкидка" ColumnName="ДейстСкидка" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+          <ScalarProperty Name="Изображение" ColumnName="Изображение" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ТоварыПродукты">
+      <EntityTypeMapping TypeName="parfumerModel.ТоварыПродукты">
+        <MappingFragment StoreEntitySet="ТоварыПродукты">
+          <ScalarProperty Name="НомерЗаказа" ColumnName="НомерЗаказа" />
+          <ScalarProperty Name="IdПродукта" ColumnName="IdПродукта" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
